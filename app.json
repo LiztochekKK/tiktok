@@ -1,0 +1,42 @@
+{
+  "name": "LiztochekTikTok",
+  "description": "Телеграмм бот созданый листиком для скачивания тикток видео/аудио.",
+  "keywords": [
+    "люблю листика",
+    "листик",
+    "audio",
+    "video",
+    "tiktok"
+  ],
+  "success_url": "https://liztochek.epizy.com",
+  "website": "https://liztochek.epizy.com",
+  "repository": "https://github.com/X-Gorn/TikTokDL",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "5957638038:AAG3qSOqoloKhX3Gcn6urkfI28Z5cRd65cg",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "15493227",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "770cfc343e6a103620641892ab62da63",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-20",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
